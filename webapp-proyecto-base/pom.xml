@@ -101,5 +101,8 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		
+		<!-- Modificar Nombre de Proyecto Final -->
+		<finalName>webapp-proyecto-base</finalName>
 	</build>
 </project>
