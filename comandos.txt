@@ -1,0 +1,3 @@
+Crear proyecto a partir de arquetypo:
+
+mvn archetype:generate  -DarchetypeGroupId=org.codehaus.mojo.archetypes -DarchetypeArtifactId=webapp-jee5 -DarchetypeVersion=1.3 -DgroupId=com.mycompany  -DartifactId=webapp-proyecto-base
