@@ -1,5 +1,5 @@
-# ${1:Fuentes de Java}
-Repositorio que guarda mis fuentes de java
+# Fuentes de Java
+Proyectos ejemplo en JAVA
 ## Instalacion
 Proyectos Base
 ## Uso
