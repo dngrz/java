@@ -1,0 +1,37 @@
+# -------------------------------------------
+# Configuraciones para este microservicio
+# -------------------------------------------
+server:
+  applicationContextPath: /v1/consumer
+  applicationConnectors:
+    - type: http
+      port: 7100
+  adminConnectors:
+    - type: http
+      port: 17100
+
+# -------------------------------------------
+# Configuraciones para este microservicio
+# -------------------------------------------
+logging:
+  level: INFO
+  loggers:
+    io.dropwizard: WARN
+    org.eclipse: INFO
+    org.hibernate: WARN
+    org.apache.camel: WARN
+    com.mchange: WARN
+    com.netflix: WARN
+    org.jboss.weld.Version: INFO
+    org.jboss.weld: WARN
+    io.dropwizard.jersey.DropwizardResourceConfig: INFO
+    io.dropwizard.server.ServerFactory: INFO
+    org.glassfish.jersey.server.ServerRuntime: FATAL
+    org.jboss.weld.environment.servlet.logging: DEBUG
+  appenders:
+    - type: file
+      currentLogFilename: logs\service.log
+      archivedLogFilenamePattern: logs\service-%d.log.gz
+      archivedFileCount: 5
+    - type: console
+      
